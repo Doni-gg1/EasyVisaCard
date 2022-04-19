@@ -1,0 +1,84 @@
+.wrapper {
+  .cardBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    div {
+      padding: 70px;
+      color: #fff;
+      border-radius: 30px;
+      h3 {
+        font: 400 36px/133% "TT Hoves";
+        margin-bottom: 20px;
+        letter-spacing: -0.04em;
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+  .secondCardsBlock {
+    margin-top: 20px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    padding: 20px;
+    .cardBlock {
+      color: #000 !important;
+    }
+
+    .background {
+      background-image: url(http://localhost:3000/_next/static/media/Background-2.43dbf4cb.svg);
+      background-repeat: no-repeat;
+      background-size: 106%;
+    }
+    p {
+      margin-bottom: 20px;
+      font-weight: 300;
+      font-size: 15px !important;
+      span {
+        margin-right: 5px !important;
+      }
+    }
+    .secondCardsBlock_2 {
+      h3 {
+        background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+        font-family: "TT Hoves";
+        font-style: normal;
+        font-weight: 300;
+        line-height: 133%;
+        letter-spacing: -0.04em;
+        margin-bottom: 20px;
+        -webkit-box-decoration-break: clone;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+      }
+      p {
+        color: black;
+      }
+      button {
+        margin-top: 20px;
+        border: 0 solid;
+        background: linear-gradient(
+          97.05deg,
+          #ff4a38 -13.27%,
+          #fe5196 104.49%,
+          #ff1a75 104.49%
+        );
+        padding: 14px 25px;
+        display: inline-block;
+        font-weight: 400;
+        font-size: 18px;
+        border-radius: 50px;
+        line-height: 21px;
+        color: #fff;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+        text-decoration: none;
+        box-shadow: 0 0 0 0 #ff4a38;
+      }
+    }
+  }
+}

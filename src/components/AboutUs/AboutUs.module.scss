@@ -1,0 +1,34 @@
+.block {
+  padding: 90px 20px 90px 20px;
+  h3 {
+    font-weight: 400;
+    -webkit-box-decoration-break: clone !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+    transition: background 0.3s;
+    background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 120%;
+    color: #b5c2d2;
+
+    span {
+      -webkit-text-fill-color: initial !important;
+    }
+
+    .logoText {
+      -webkit-text-fill-color: black !important;
+      //background: linear-gradient(113.78deg, #000 -1.69%, #000 112.64%);
+    }
+  }
+  p {
+    font-size: 20px;
+    line-height: 140%;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
