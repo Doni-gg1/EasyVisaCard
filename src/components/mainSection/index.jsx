@@ -16,7 +16,9 @@ const MainSection = () => {
       <div>
         <header>
           <div>
-            <Image src={Logo} />
+            <a href="#">
+              <Image src={Logo} />
+            </a>
           </div>
           <div className={style.navs}>
             <a href="tel:+7 (495) 023-84-28">+7 (495) 023-84-28</a>
@@ -39,31 +41,39 @@ const MainSection = () => {
       </div>
       <div className={style.radioBlock}>
         <div className={style.radioWrapper}>
-          <h3>В какой стране Вы хотите получить банковскую карту?</h3>
-          <FormControl sx={{ display: "grid", rowGap: "60px" }}>
-            <RadioGroup
-              sx={{ color: "white" }}
-              aria-labelledby="demo-radio-buttons-group-label"
-              defaultValue="female"
-              name="radio-buttons-group"
-            >
-              <FormControlLabel
-                value="KG"
-                control={<Radio />}
-                label="Киргизия"
-              />
-            </RadioGroup>
-            <button className={style.nextButton}>
-              Далее
-              <Image src={ArrowRight} />
-            </button>
-          </FormControl>
+          <div className={style.first}>
+            <div className={style.second}>
+              <h3>В какой стране Вы хотите получить банковскую карту?</h3>
+              <FormControl sx={{ display: "grid", rowGap: "60px" }}>
+                <RadioGroup
+                  sx={{ color: "white" }}
+                  aria-labelledby="demo-radio-buttons-group-label"
+                  defaultValue="female"
+                  name="radio-buttons-group"
+                >
+                  <FormControlLabel
+                    value="KG"
+                    control={<Radio sx={{ color: "white" }} color="default" />}
+                    label="Киргизия"
+                  />
+                </RadioGroup>
+                <button className={style.nextButton}>
+                  <span>
+                    Далее
+                    <Image className={style.icon} src={ArrowRight} />
+                  </span>
+                </button>
+              </FormControl>
+            </div>
+          </div>
         </div>
         <div className={style.tarifs}>
-          <span className={style.tarifBlock}>
-            <h3>Ознакомиться с тарифами</h3>
-            <Image src={ArrowRight} />
-          </span>
+          <a href="#">
+            <span className={style.tarifBlock}>
+              <h3>Ознакомиться с тарифами</h3>
+              <Image src={ArrowRight} />
+            </span>
+          </a>
         </div>
       </div>
     </div>

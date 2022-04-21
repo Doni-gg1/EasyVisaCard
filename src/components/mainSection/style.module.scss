@@ -5,28 +5,43 @@
     padding: 0;
   }
 
-  padding: 30px 43px 60px 23px;
+  padding: 30px 43px 20px 23px;
   background: #f6f6f6;
   margin-top: 20px;
   border-radius: 30px;
   display: grid;
   grid-template-columns: 65% 35%;
+  column-gap: 20px;
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
 
   header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     margin-bottom: 60px;
 
     .navs {
       display: flex;
       align-items: center;
+      justify-content: center;
 
       a:first-child:hover,
-      a:nth-child(2):hover {
+      a:nth-child(3):hover {
         transition: 0.5s;
-        background: -webkit-linear-gradient(-90deg, #eee, #333);
+        background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+        font-weight: 400;
+        -webkit-box-decoration-break: clone;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+
+      a:nth-child(3):hover {
+        border-bottom: 1px solid #00dfbd;
       }
 
       a:last-child {
@@ -36,6 +51,13 @@
       a:last-child:hover {
         transform: scale(1.1);
         transition: 0.5s;
+      }
+
+      @media screen and (max-width: 674px) {
+        flex-direction: column;
+        a:last-child {
+          margin-top: 5px;
+        }
       }
     }
 
@@ -51,6 +73,39 @@
     .divider:after {
       content: "|";
       display: inline-block;
+
+      @media screen and (max-width: 674px) {
+        display: none;
+      }
+    }
+  }
+
+  .block {
+    h1 {
+      margin-bottom: 10px;
+      font-size: 40px;
+      line-height: 117.5%;
+      font-family: "TT Hoves", sans-serif;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 143%;
+      letter-spacing: -0.02em;
+      background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+      font-weight: 400;
+      -webkit-box-decoration-break: clone;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    @media screen and (max-width: 1300px) {
+      h1 {
+        font-size: 35px;
+      }
     }
   }
 
@@ -59,12 +114,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: -30px;
 
     .radioWrapper {
       width: 100%;
       border-radius: 30px;
       background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
-      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .first {
+        background-image: url("../../assets/svg/RadioBackground_2.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 10% 10%;
+
+        .second {
+          background-image: url("../../assets/svg/RadioBackgroun_1.svg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding: 50px;
+          background-position: 100% 100%;
+        }
+      }
 
       h3 {
         font-style: normal;
@@ -77,22 +150,33 @@
       }
 
       .nextButton {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        cursor: pointer;
-        display: inline-block;
-        color: #fff;
-        padding: 14px 24px;
-        border-radius: 50px;
-        transition: box-shadow 0.3s;
-        border: 1px solid #fff;
-        letter-spacing: -0.04em;
+        border: none;
         background: transparent;
-        display: block;
-
+        width: max-content;
+        position: relative;
         span {
-          margin-left: 5px !important;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          cursor: pointer;
+          display: inline-block;
+          color: #fff;
+          padding: 16px 26px;
+          border-radius: 50px;
+          transition: box-shadow 0.3s;
+          border: 1px solid #fff;
+          letter-spacing: -0.04em;
+          transition: 0.3s;
+
+          &:hover {
+            transition: 0.3s;
+            border: 2px solid #fff;
+            padding: 15px 25px;
+          }
+        }
+
+        .icon {
+          padding-left: 5px !important;
         }
       }
     }

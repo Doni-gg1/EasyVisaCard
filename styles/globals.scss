@@ -14,3 +14,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.MuiAccordion-root {
+  padding: 40px !important;
+  border-radius: 30px !important;
+  box-shadow: none !important;
+
+  .wrappHeaderAcc:hover .titleAcc {
+    background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%) !important;
+    -webkit-text-fill-color: transparent !important;
+    text-fill-color: transparent !important;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 20px !important;
+  }
+}
+
+.MuiAccordion-root::before {
+  content: none !important;
+}

@@ -1,5 +1,28 @@
 .container {
-  padding: 0 4rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  font-family: "TT Hoves", sans-serif;
+
+  @media screen and (max-width: 992px) {
+    padding: 40px 0 0 0;
+  }
+
+  .telegramIconActive {
+    position: fixed;
+    left: 90%;
+    top: 85%;
+    z-index: 10;
+    transition: 0.3s;
+  }
+  .telegramIconNotActive {
+    transition: 0.3s;
+    position: fixed;
+    left: 100%;
+    top: 85%;
+    z-index: 10;
+  }
 }
 
 .main {
