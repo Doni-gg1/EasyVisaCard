@@ -7,7 +7,9 @@
   padding-top: 100px;
   margin-bottom: 100px;
   h2 {
-    font: 400 36px/133% "TT Hoves";
+    font-family: "TT Hoves", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -38,7 +40,9 @@
 
     .titleOfQuestion,
     .notActiveQuestion {
-      font: 100 24px/150% "TT Hoves";
+      font-size: 20px;
+      font-family: "TT Hoves", sans-serif;
+      font-weight: 100;
       color: #1b1a22;
       letter-spacing: -0.01em;
       -webkit-box-decoration-break: clone;
@@ -68,6 +72,8 @@
       font: 100 24px/150% "TT Hoves";
       color: #1b1a22;
       letter-spacing: -0.01em;
+      font-family: "TT Hoves", sans-serif;
+      font-weight: 100;
 
       @media (max-width: 990px) {
         font-size: 16px;
