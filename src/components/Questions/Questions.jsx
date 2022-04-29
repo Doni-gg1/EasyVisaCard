@@ -200,48 +200,6 @@ const Questions = () => {
             ))}
           </AccordionDetails>
         </Accordion>
-
-        <Accordion
-          sx={{
-            padding: "40px",
-            borderRadius: "30px",
-            border: `1px solid ${fifthQuestion ? "#00dfbd" : "#cad9ec"}`,
-          }}
-          expanded={fifthQuestion}
-          onChange={() => setFifthQuestion(!fifthQuestion)}
-        >
-          <AccordionSummary
-            className={style.wrappHeaderAcc}
-            expandIcon={<Plus expanded={fifthQuestion} />}
-            aria-controls="panel1bh-content"
-            id="panel1bh-header"
-          >
-            <Typography
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                flexShrink: 0,
-                justifyContent: "space-between",
-                width: "fit-content",
-              }}
-            >
-              <span
-                className={`titleAcc ${style.titleOfQuestion} ${
-                  fifthQuestion ? style.activeQuestion : style.notActiveQuestion
-                }`}
-              >
-                Как мне пополнить свой счет и пользоваться картой?
-              </span>
-            </Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            {fifthAnswers.map(({ id, answer }) => (
-              <p className={style.answer} key={id}>
-                {answer}
-              </p>
-            ))}
-          </AccordionDetails>
-        </Accordion>
       </Box>
     </div>
   );

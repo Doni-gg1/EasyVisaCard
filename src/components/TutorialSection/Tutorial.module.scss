@@ -127,6 +127,10 @@
       text-decoration: none;
       box-shadow: 0 0 0 0 #ff4a38;
       margin: 60px 0;
+
+      &:hover {
+        box-shadow: 0 0 10px 8px #ff4a38;
+      }
     }
   }
 

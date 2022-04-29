@@ -12,7 +12,6 @@ import Requisites from "../src/components/Requisites/Requisites";
 import Footer from "../src/components/Footer/Footer";
 import { useEffect, useRef, useState } from "react";
 import telegramIcon from "../src/assets/svg/Telegram-icon2.svg";
-// import useElementOnScreen from "../src/customHooks/hooks";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
@@ -29,23 +28,32 @@ export default function Home() {
   }, []);
   return (
     <div className={styles.container}>
-      <a href={'#'}
-        className={
-          !isVisible ? styles.telegramIconActive : styles.telegramIconNotActive
-        }
-      >
-        {" "}
-        <Image src={telegramIcon} />
-      </a>
-      <MainSection />
-      <AboutUs />
-      <Services />
-      <Cards />
-      <Tutorial />
-      <Banks />
-      <Questions />
-      <Requisites />
-      <Footer />
+      <Head>
+        <title>Easy Visa Card</title>
+      </Head>
+      <main>
+        <a
+          target={"_blank"}
+          href={"https://t.me/easyvisacardbot"}
+          className={
+            !isVisible
+              ? styles.telegramIconActive
+              : styles.telegramIconNotActive
+          }
+        >
+          {" "}
+          <Image src={telegramIcon} />
+        </a>
+        <MainSection />
+        <AboutUs />
+        <Services />
+        <Cards />
+        <Tutorial />
+        <Banks />
+        <Questions />
+        <Requisites />
+        <Footer />
+      </main>
     </div>
   );
 }

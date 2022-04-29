@@ -17,15 +17,15 @@ const MainSection = () => {
         <header>
           <div>
             <a href="#">
-              <Image src={Logo} />
+              <h2>EasyVisaCard</h2>
             </a>
           </div>
           <div className={style.navs}>
             <a href="tel:+7 (495) 023-84-28">+7 (495) 023-84-28</a>
             <span className={style.divider} />
-            <a href="mailto:hello@people-pay.ru">hello@people-pay.ru</a>
+            <a href="mailto:easyvisacard@gmail.com">easyvisacard@gmail.com</a>
             <span className={style.divider} />
-            <a href="https://t.me/peoplepay_n/">
+            <a target={"_blank"} href="https://t.me/easyvisacardbot">
               <Image width={"24px"} src={TelegramIcon} />
             </a>
           </div>
@@ -33,7 +33,7 @@ const MainSection = () => {
 
         <div className={style.block}>
           <h1>
-            Дистанционно открываем счета и банковские карты в иностранных банках
+            Дистанционно открываем счета и банковские карты в банках Кыргызстана
           </h1>
           <h3>БЫСТРО, ЛЕГАЛЬНО, НАДЕЖНО</h3>
           <Image src={TopImage} />
@@ -43,27 +43,10 @@ const MainSection = () => {
         <div className={style.radioWrapper}>
           <div className={style.first}>
             <div className={style.second}>
-              <h3>В какой стране Вы хотите получить банковскую карту?</h3>
-              <FormControl sx={{ display: "grid", rowGap: "60px" }}>
-                <RadioGroup
-                  sx={{ color: "white" }}
-                  aria-labelledby="demo-radio-buttons-group-label"
-                  defaultValue="female"
-                  name="radio-buttons-group"
-                >
-                  <FormControlLabel
-                    value="KG"
-                    control={<Radio sx={{ color: "white" }} color="default" />}
-                    label="Киргизия"
-                  />
-                </RadioGroup>
-                <button className={style.nextButton}>
-                  <span>
-                    Далее
-                    <Image className={style.icon} src={ArrowRight} />
-                  </span>
-                </button>
-              </FormControl>
+              <h3>
+                Денежные переводы в любой валютепо всему миру из России и в
+                Россию в одном приложении.
+              </h3>
             </div>
           </div>
         </div>

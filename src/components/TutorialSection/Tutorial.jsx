@@ -20,30 +20,26 @@ const Tutorial = () => {
           <div className={style.step}>
             <div>1</div>{" "}
             <p>
-              Вы <span>оставляете заявку</span> на сайте, через Telegram или по
-              телефону
+              Вы <span>оставляете заявку</span> через Telegram
             </p>
           </div>
           <div className={style.step}>
             <div>2</div>{" "}
             <p>
-              Наш{" "}
-              <span>менеджер предлагает Вам актуальные варианты банков</span>{" "}
-              где есть квоты на открытие счетов и банковских карт
+              Наш <span>менеджер консультирует вас по открытию счетов</span> и
+              банковских карт
             </p>
           </div>
           <div className={style.step}>
             <div>3</div>{" "}
             <p>
-              Вы <span>определяетесь со страной, банком и тарифным планом</span>
+              Вносите <span>предоплату 15%</span>
             </p>
           </div>
           <div className={style.step}>
             <div>4</div>{" "}
             <p>
-              <span>Делаете нотариально заверенную доверенность</span> на нашего
-              менеджера и предоставляете дополнительные документы при
-              необходимости
+              <span>Высылаем вам заполненную доверенность. </span>
             </p>
           </div>
         </div>
@@ -51,7 +47,11 @@ const Tutorial = () => {
           <div className={style.step}>
             <div>5</div>{" "}
             <p>
-              <span>Вносите предоплату 15%</span>
+              <span>
+                Делаете нотариально заверенную доверенность и заверенную копию
+                загранпаспорта на нашего менеджера. Наш курьер проверяет
+                документы и передает из банку
+              </span>
             </p>
           </div>
           <div className={style.step}>
@@ -59,7 +59,7 @@ const Tutorial = () => {
             <p>
               Мы <span>открываем</span> Вам{" "}
               <span>счет, выпускаем банковскую</span> карту{" "}
-              <span>и сим-карту</span> местного оператора связи
+              <span>и сим карту</span> местного оператора связи
             </p>
           </div>
           <div className={style.step}>
@@ -82,7 +82,9 @@ const Tutorial = () => {
       </div>
       <div className={style.btn}>
         {" "}
-        <button>Оставить заявку</button>
+        <a target={"_blank"} href="https://t.me/easyvisacardbot">
+          <button>Оставить заявку</button>
+        </a>
       </div>
       <div className={style.footer}>
         <h2>Банки с которыми мы работаем</h2>

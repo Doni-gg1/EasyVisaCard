@@ -34,11 +34,13 @@ const Footer = () => {
           <span className={style.divider} />
           <a href="mailto:hello@people-pay.ru">hello@people-pay.ru</a>
           <span className={style.divider} />
-          <a href="https://t.me/peoplepay_n/">
+          <a target={"_blank"} href="https://t.me/easyvisacardbot">
             <Image width={"24px"} src={TelegramIcon} />
           </a>
           <span className={style.divider} />
-          <a href="#">Оставить заявку</a>
+          <a target={"_blank"} href="https://t.me/easyvisacardbot">
+            Оставить заявку
+          </a>
         </div>
       </div>
       <span className={style.thirdBlock}>

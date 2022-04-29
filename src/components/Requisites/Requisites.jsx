@@ -65,7 +65,11 @@ const Requisites = () => {
                 </span>
               </a>
             </div>
-            <a href={"#"} className={style.telegramIcon}>
+            <a
+              href={"https://t.me/easyvisacardbot"}
+              target={"_blank"}
+              className={style.telegramIcon}
+            >
               <Image src={TelegramIcon} />
             </a>
           </div>
