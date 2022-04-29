@@ -21,7 +21,7 @@ const MainSection = () => {
             </a>
           </div>
           <div className={style.navs}>
-            <a href="tel:">(Номер телефона)</a>
+            {/*<a href="tel:">(Номер телефона)</a>*/}
             <span className={style.divider} />
             <a href="mailto:easyvisacard@gmail.com">easyvisacard@gmail.com</a>
             <span className={style.divider} />
@@ -44,7 +44,7 @@ const MainSection = () => {
           <div className={style.first}>
             <div className={style.second}>
               <h3>
-                Денежные переводы в любой валютепо всему миру из России и в
+                Денежные переводы в любой валюте по всему миру из России и в
                 Россию в одном приложении.
               </h3>
             </div>
