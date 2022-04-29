@@ -34,6 +34,10 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+
+      @media screen and (max-width: 464px) {
+        text-align: center;
+      }
     }
 
     .navs {
@@ -90,6 +94,11 @@
       @media screen and (max-width: 674px) {
         display: none;
       }
+    }
+
+    @media screen and (max-width: 464px) {
+      grid-template-columns: 1fr;
+      row-gap: 10px;
     }
   }
 
