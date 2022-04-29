@@ -46,11 +46,18 @@
       }
 
       a:first-child:hover,
-      a:nth-child(2):hover {
+      a:nth-child(3):hover {
         transition: 0.5s;
-        background: -webkit-linear-gradient(-90deg, #eee, #333);
+        background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
+        font-weight: 400;
+        -webkit-box-decoration-break: clone;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+      a:nth-child(3):hover {
+        border-bottom: 1px solid #00dfbd;
       }
 
       a:nth-child(4) {

@@ -68,6 +68,7 @@ const Requisites = () => {
             <a
               href={"https://t.me/easyvisacardbot"}
               target={"_blank"}
+              rel="noreferrer"
               className={style.telegramIcon}
             >
               <Image src={TelegramIcon} />

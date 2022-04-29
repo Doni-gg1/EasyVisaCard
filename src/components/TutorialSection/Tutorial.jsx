@@ -82,7 +82,7 @@ const Tutorial = () => {
       </div>
       <div className={style.btn}>
         {" "}
-        <a target={"_blank"} href="https://t.me/easyvisacardbot">
+        <a target={"_blank"} rel="noreferrer" href="https://t.me/easyvisacardbot">
           <button>Оставить заявку</button>
         </a>
       </div>

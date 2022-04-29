@@ -25,7 +25,7 @@ const MainSection = () => {
             <span className={style.divider} />
             <a href="mailto:easyvisacard@gmail.com">easyvisacard@gmail.com</a>
             <span className={style.divider} />
-            <a target={"_blank"} href="https://t.me/easyvisacardbot">
+            <a target={"_blank"} rel="noreferrer" href="https://t.me/easyvisacardbot">
               <Image width={"24px"} src={TelegramIcon} />
             </a>
           </div>

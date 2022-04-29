@@ -28,7 +28,7 @@ const Services = () => {
           Карты Киргизского банка принимаются к оплате всеми иностранными сервисами без ограничений. Продлевайте
           действующие аккаунты и оплачивайте новые.
         </p>
-        <a target={"_blank"} href="https://t.me/easyvisacardbot">
+        <a target={"_blank"} rel="noreferrer" href="https://t.me/easyvisacardbot">
           <button>Оставить заявку</button>
         </a>
       </div>
