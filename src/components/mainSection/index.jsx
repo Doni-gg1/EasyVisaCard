@@ -21,7 +21,7 @@ const MainSection = () => {
             </a>
           </div>
           <div className={style.navs}>
-            <a href="tel:+7 (495) 023-84-28">+7 (495) 023-84-28</a>
+            <a href="tel:">(Номер телефона)</a>
             <span className={style.divider} />
             <a href="mailto:easyvisacard@gmail.com">easyvisacard@gmail.com</a>
             <span className={style.divider} />
