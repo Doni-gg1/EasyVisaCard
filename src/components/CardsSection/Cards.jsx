@@ -60,7 +60,11 @@ const Cards = () => {
                 {item}
               </p>
             ))}
-            <a target={"_blank"} rel="noreferrer" href={"https://t.me/easyvisacardbot"}>
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href={"https://t.me/easyvisacardbot"}
+            >
               Оставить заявку
             </a>
           </Box>

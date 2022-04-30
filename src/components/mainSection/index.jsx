@@ -1,13 +1,8 @@
 import React from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
-import Logo from "../../assets/svg/logo-icon.svg";
 import TelegramIcon from "../../assets/svg/telegram-icon.svg";
 import TopImage from "../../assets/png/top-img.png";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
 import ArrowRight from "../../assets/svg/arrowRight-icon.svg";
 
 const MainSection = () => {
@@ -25,7 +20,11 @@ const MainSection = () => {
             <span className={style.divider} />
             <a href="mailto:easyvisacard@gmail.com">easyvisacard@gmail.com</a>
             <span className={style.divider} />
-            <a target={"_blank"} rel="noreferrer" href="https://t.me/easyvisacardbot">
+            <a
+              target={"_blank"}
+              rel="noreferrer"
+              href="https://t.me/easyvisacardbot"
+            >
               <Image width={"24px"} src={TelegramIcon} />
             </a>
           </div>
@@ -50,14 +49,19 @@ const MainSection = () => {
             </div>
           </div>
         </div>
-        <div className={style.tarifs}>
-          <a href="#">
+        <a
+          className={style.tarifs}
+          target={"_blank"}
+          href={"Tarifs.pdf"}
+          download
+        >
+          <div>
             <span className={style.tarifBlock}>
               <h3>Ознакомиться с тарифами</h3>
               <Image src={ArrowRight} />
             </span>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
     </div>
   );

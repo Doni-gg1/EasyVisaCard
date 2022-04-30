@@ -55,9 +55,9 @@ export default function Home() {
         <Services />
         <Cards />
         <Tutorial />
-        <Banks />
+        {/*<Banks />*/}
         <Questions />
-        <Requisites />
+        {/*<Requisites />*/}
         <Footer />
       </main>
     </div>

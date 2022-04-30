@@ -35,11 +35,12 @@
       align-items: center;
       grid-gap: 25px 20px;
     }
-    p {
+    div {
+      font-family: "TT Hoves", sans-serif !important;
       font-size: 20px;
       line-height: 140%;
       letter-spacing: -0.04em;
-      font-weight: 300;
+      font-weight: 100 !important;
       color: #1b1a22;
       margin-top: 65px;
     }
@@ -84,7 +85,9 @@
     margin-top: -100px;
 
     h3 {
-      font: 400 36px/133% "TT Hoves";
+      font-family: "TT Hoves", sans-serif;
+      font-weight: 400;
+      font-size: 36px;
       margin-bottom: 20px;
 
       @media screen and (max-width: 992px) {

@@ -16,18 +16,10 @@ const Services = () => {
         <h3>
           Оплачивайте иностранные сервисы с помощью VISA карт.
         </h3>
-        <div className={style.brands}>
-          <Image src={NetflixPic} />
-          <Image src={SteamPic} />
-          <Image src={SpotifyPic} />
-          <Image src={AppStorePic} />
-          <Image src={PokerStarPic} />
-          <Image src={BinancePic} />
-        </div>
-        <p>
+        <div>
           Карты Киргизского банка принимаются к оплате всеми иностранными сервисами без ограничений. Продлевайте
           действующие аккаунты и оплачивайте новые.
-        </p>
+        </div>
         <a target={"_blank"} rel="noreferrer" href="https://t.me/easyvisacardbot">
           <button>Оставить заявку</button>
         </a>

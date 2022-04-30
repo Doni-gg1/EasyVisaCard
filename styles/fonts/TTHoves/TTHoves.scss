@@ -12,6 +12,17 @@
 
 @font-face {
   font-family: "TT Hoves", sans-serif;
-  src: local("TT Hoves"), url("./TTHoves-Regular.woff") format("truetype");
+  src: local("TT Hoves"), url("./TTHoves-Hairline.woff") format("truetype");
   font-weight: 100;
+}
+@font-face {
+  font-family: "TT Hoves", sans-serif;
+  src: local("TT Hoves"), url("./TTHoves-Light.woff") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "TT Hoves", sans-serif;
+  src: local("TT Hoves"), url("./TTHoves-Light.woff") format("truetype");
+  font-weight: 500;
 }

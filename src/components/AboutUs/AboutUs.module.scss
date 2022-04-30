@@ -1,6 +1,7 @@
 .block {
   padding: 90px 20px 90px 20px;
-  h3 {
+  .content {
+    display: inline;
     font-weight: 400;
     -webkit-box-decoration-break: clone !important;
     -webkit-background-clip: text !important;
@@ -13,6 +14,7 @@
     font-size: 40px;
     line-height: 120%;
     color: #b5c2d2;
+    font-family: "TT Hoves", sans-serif;
 
     span {
       -webkit-text-fill-color: initial !important;
