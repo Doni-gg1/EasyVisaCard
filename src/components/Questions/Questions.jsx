@@ -50,8 +50,10 @@ const Questions = () => {
               }}
             >
               <span
-                className={`${style.titleOfQuestion} ${
-                  firstQuestion ? style.activeQuestion : style.notActiveQuestion
+                className={`titleAcc ${style.titleOfQuestion} ${
+                  secondQuestion
+                    ? style.activeQuestion
+                    : style.notActiveQuestion
                 }`}
               >
                 Кто Вы, и почему я могу Вам доверять?

@@ -46,7 +46,7 @@
       justify-content: center;
 
       a:first-child:hover,
-      a:nth-child(3):hover {
+      .email:hover {
         transition: 0.5s;
         background: linear-gradient(113.78deg, #00dfbd -1.69%, #0090ff 112.64%);
         font-weight: 400;
@@ -57,7 +57,7 @@
         text-fill-color: transparent;
       }
 
-      a:nth-child(3):hover {
+      .email:hover {
         border-bottom: 1px solid #00dfbd;
       }
 

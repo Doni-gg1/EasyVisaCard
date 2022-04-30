@@ -32,7 +32,7 @@ const Footer = () => {
         <div className={style.navs}>
           {/*<a href="tel:">(Номер телефона)</a>*/}
           <span className={style.divider} />
-          <a href="mailto:easyvisacard@gmail.com">easyvisacard@gmail.com</a>
+          <a className={style.email} href="mailto:easyvisacard@gmail.com">easyvisacard@gmail.com</a>
           <span className={style.divider} />
           <a
             target={"_blank"}
