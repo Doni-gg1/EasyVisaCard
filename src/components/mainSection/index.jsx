@@ -53,6 +53,7 @@ const MainSection = () => {
           className={style.tarifs}
           target={"_blank"}
           href={"Tarifs.pdf"}
+          rel="noreferrer"
           download
         >
           <div>
